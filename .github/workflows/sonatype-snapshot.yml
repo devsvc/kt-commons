@@ -33,8 +33,8 @@ jobs:
       uses: sonatype-nexus-community/nexus-repo-github-action@1.0.0
       with:
         serverUrl: https://oss.sonatype.org/
-        username: ${{ OSSRH_USER }}
-        password: ${{ OSSRH_PASSWORD }}
+        username: ${{ secrets.OSSRH_USER }}
+        password: ${{ secrets.OSSRH_PASSWORD }}
         format: maven2
         repository: Snapshots
         coordinates: groupId=pro.devsvc artifactId=kt-commons version=1.0.0
