@@ -10,6 +10,10 @@ import java.net.Socket
  */
 fun getLocalHostIP(): String {
     val socket = Socket()
-    socket.connect(InetSocketAddress("google.com", 80))
-    return socket.localAddress.toString().replace("/", "")
+    socket.use {
+        it.connect(InetSocketAddress("google.com", 80))
+        val ip = socket.localAddress.toString().replace("/", "")
+        socket.close()
+        return ip
+    }
 }
