@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package com.sinandata.mp.utils
+package pro.devsvc.ktcommons
 
 import java.io.Closeable
 
