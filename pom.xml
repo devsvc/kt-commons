@@ -8,9 +8,8 @@
         <groupId>pro.devsvc</groupId>
         <artifactId>pro-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
+        <relativePath/>
     </parent>
-
-    <groupId>pro.devsvc</groupId>
     <artifactId>kt-commons</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
