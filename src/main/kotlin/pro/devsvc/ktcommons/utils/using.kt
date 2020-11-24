@@ -1,6 +1,6 @@
 @file:Suppress("unused")
 
-package pro.devsvc.ktcommons
+package pro.devsvc.ktcommons.utils
 
 import java.io.Closeable
 
