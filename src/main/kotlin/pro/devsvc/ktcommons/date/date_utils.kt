@@ -26,3 +26,7 @@ fun getFirstDayOfWeek(date: LocalDate): LocalDate {
     val f = WeekFields.of(DayOfWeek.MONDAY, 1)
     return date.with(f.dayOfWeek(), 1)
 }
+
+fun todayDataStr(): String? {
+    return LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))
+}
