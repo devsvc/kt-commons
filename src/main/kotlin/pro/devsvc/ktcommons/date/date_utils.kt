@@ -27,6 +27,6 @@ fun getFirstDayOfWeek(date: LocalDate): LocalDate {
     return date.with(f.dayOfWeek(), 1)
 }
 
-fun todayDataStr(): String? {
+fun todayDataStr(): String {
     return LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))
 }
